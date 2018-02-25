@@ -1,0 +1,441 @@
+*, html, body
+{
+	box-sizing: border-box;
+	margin:auto;
+  padding:auto;
+}
+
+html{
+	width: 92%;
+	margin:auto;
+}
+
+body {
+	width: 92%;
+	background: #2A2A2A;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #878787;
+  line-height: 130%;
+}
+h1, h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	color: #000000;
+}
+h1 {
+	font-size: 1.8em;
+}
+h2 {
+	font-size: 2em;
+}
+p, ul {
+	margin-top: 0;
+	line-height: 180%;
+}
+a{
+  color:#000000;
+  text-decoration: none;
+}
+a:hover {color: #e1e5be;}
+header {
+	clear: both;
+	width: 100%;
+	height: 250px;
+	margin: 0px auto;
+	padding: 0px 0px 0px 0px;
+	background: url(https://st.depositphotos.com/2101611/3795/i/950/depositphotos_37959283-stock-photo-wood-background.jpg)top;
+}
+
+#logo {
+	padding: 15px;
+	color: #000000;
+	float: left;
+}
+#logo h1 {
+	padding-top: 20px;
+	letter-spacing: -1px;
+	text-transform:uppercase;
+	font-size: 3.8em;
+  	margin: 0 auto;
+}
+#logo p {
+  	font-size: 2.0em;
+	margin: 0;
+	padding: 20px 10px 0 40px;
+	font: normal 18px Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	color: #000000;
+  	padding: 0 auto;
+}
+#logo a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	color: #000000;
+}
+
+#login{
+	width: 30%;
+	float: right;
+    position: relative;
+}
+/*reg forma*/
+.form-4,
+.register {
+	width: 100%;
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #000;
+    }
+.register {
+	display: none;
+}
+.register input[type=text],
+.register input[type=email],
+.register input[type=repeatPassword],
+.register input[type=password]{
+	width: 100%;
+	padding: 8px 4px 3px 10px;
+	margin-bottom: 15px;
+	border: 1px solid #4e3043;
+	border: 1px solid #bfbbbe;
+	background: rgba(0,0,0,0.15);
+	border-radius: 2px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	font-family: 'Raleway', 'Lato', Arial, sans-serif;
+	color: #000;
+	font-size: 13px;
+}
+
+.form-4 h1,
+#login span {
+    font-size: 20px;
+    padding-bottom: 10px;
+		color:#000;
+}
+.form-4 input[type=email],
+.form-4 input[type=password] {
+    width: 100%;
+    padding: 8px 4px 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #4e3043;
+    border: 1px solid #bfbbbe;
+    background: rgba(0,0,0,0.15);
+    border-radius: 2px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+    color: #000;
+    font-size: 13px;
+}
+.form-4 input::-webkit-input-placeholder,
+.register input::-webkit-input-placeholder {
+    color: #470017;
+}
+.form-4 input:-moz-placeholder,
+.register input:-moz-placeholder {
+    color: #470017;
+}
+.form-4 input:-ms-input-placeholder,
+.register input:-ms-input-placeholder {
+    color: #470017;
+}
+.form-4 input[type=email]:hover,
+.form-4 input[type=password]:hover,
+.register input[type=password]:hover,
+.register input[type=text]:hover,
+.register input[type=email]:hover,
+.register input[type=repeatPassword] {
+    border-color: #333;
+}
+#login button[type=submit],
+#login button[type=submit] {
+    width: 100%;
+    padding: 8px 5px;
+    border-radius: 5px;
+    border: 1px solid #4e3043;
+    transition: all 0.3s ease-out;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Raleway', 'Lato', Arial, sans-serif;
+}
+#wrapper {
+	width: 100%;
+	background: #c9c9b5;
+  	position:relative;
+}
+#menu {
+	width: 100%;
+	height: 60px;
+	background: #000000;
+}
+#menu ul {
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+#menu li {
+	background: #000000;
+	height: 60px;
+	float: left;
+	border-right: 1px solid #1A1A18;
+}
+#menu a {
+	display: block;
+	height: 30px;
+	padding: 25px 40px 0px 40px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	border: none;
+}
+#menu a:hover {
+  color:#d7dec3;
+	text-decoration: none;
+}
+#search {
+	background: #000000;
+	width: 30%;
+	height: 60px;
+	padding-left: 30px;
+	display: inline-block;
+}
+#search form {
+	height: 41px;
+}
+#search-text {
+	margin-top: 15px;
+	width: 90%;
+	border: none;
+	height: 30px;
+	background: #FFFFFF;
+	text-transform: lowercase;
+	font: normal 11px Arial, Helvetica, sans-serif;
+	color: #000000;
+}
+#page {
+	width: 100%;
+	margin: 0px auto;
+	background: #c9c9b5;
+	border: 1px #c9c9b5 solid;
+	position:relative;
+}
+#content {
+  float: left;
+  text-align: left;
+	width: 75%;
+}
+
+#page p{
+	color: #000;
+}
+#post {
+	width: 85%;
+	margin-bottom: 40px;
+  color: #000;
+  margin-left: 4%;
+  border-radius: 2px white solid;
+}
+#post img{
+  width: 100%;
+  padding-top: 10px;
+}
+#post h2 {
+	height: 1em;
+	margin-bottom: 10px;
+	padding: 12px 0 0 0px;
+}
+#post .entry {
+	padding: 0px 0px 10px 0px;
+	padding-bottom: 20px;
+	text-align: justify;
+}
+#post p{
+text-indent: 1.5em;
+text-align: justify;
+}
+#post ul{
+  	padding-left:50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.more {
+	float: left;
+	display: block;
+	width: 150px;
+	padding: 2px 0px 0px 0px;
+	height: 23px;
+	margin-right: 10px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #ffffff;
+}
+.comments {
+	float: left;
+	display:block;
+	width: 120px;
+	height: 23px;
+	padding: 2px 0px 0px 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+#burger2{
+  background: #2A2A2A;
+  text-align: center;
+  font-family: sans-serif, arial;
+	font-size: 1em;
+	padding: 1px 1px;
+	height: 50px;
+	color: #fff;
+	border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  text-align: center;
+  }
+
+#settings{
+margin-top: 50%;
+color:#000;
+font-size: 1em;
+margin-right: 2%;
+}
+
+.sett.closed2 {
+  display: none;
+}
+.sett.opened2 {
+  display: block;
+}
+
+#settings ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align:left;
+}
+#settings li {
+  margin-bottom: 10px;
+}
+
+#side{
+	width:25%;
+  float:right;
+}
+
+#burger {
+	background: #2A2A2A;
+  text-align: center;
+  font-family: sans-serif, arial;
+	font-size: 1.2em;
+	padding: 1px 1px;
+	float: right;
+	height: 50px;
+	color: #fff;
+	border: none;
+	margin-right: 30%;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+.m_sidebar {
+	margin-right: 25%;
+  text-align: center;
+  float: right;
+  width: 90%;
+  color: #000;
+	margin-top: 10px;
+}
+.m_sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align:center;
+}
+.m_sidebar li {
+  margin-bottom: 10px;
+}
+.m_sidebar a {
+	background: #fff;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif, arial;
+  font-size: 1em;
+  padding: 3px 3px;
+  margin-bottom:-1px;
+  color: #000;
+  border:1px solid #e5e5e5;
+}
+.m_sidebar a:hover{color:#9ba827;}
+.m_sidebar.closed {
+  display: none;
+}
+.m_sidebar.opened {
+  display: block;
+}
+
+footer {
+  clear: both;
+	font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0;
+  background: url(https://st.depositphotos.com/2101611/3795/i/950/depositphotos_37959283-stock-photo-wood-background.jpg) top;
+}
+#footer-menu {
+	width: 100%;
+	height: 60px;
+	margin: 0px auto;
+	padding: 0px 0px 0px 20px;
+  padding-bottom: -40px;
+}
+#footer-menu ul {
+	width: 98%;
+	margin: 0;
+	padding: 30px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+#footer-menu li {
+	float: left;
+}
+#footer-menu a {
+	display: block;
+	padding: 0px 20px 0px 20px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: #000;
+	border-right: 1px solid #383838;
+}
+
+#footer-menu a:hover {
+	color: #FFFFFF;
+}
+
+#footer-menu .current_page_item a {
+	text-decoration: none;
+}

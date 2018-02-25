@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="Бижутерия, украшения, натуральные камни, ручная работа" >
+  <meta name="description" content="Украшения ручной работы на любой вкус" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta http-equiv= "content-type" content= "text/html; charset=utf-8" >
+  <title> DREAMER </title>
+  <link href="css\style1.css" rel="stylesheet" type="text/css" media="screen" >
+  <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCtv4a1pGB5cjBPTwLMIzXjyV6C8N7dUAQ",
+    authDomain: "first-try-d42dd.firebaseapp.com",
+    databaseURL: "https://first-try-d42dd.firebaseio.com",
+    projectId: "first-try-d42dd",
+    storageBucket: "first-try-d42dd.appspot.com",
+    messagingSenderId: "894181046263"
+  };
+  firebase.initializeApp(config);
+</script>
+
+</head>
+<body>
+  <header>
+  	<div id="logo">
+  		<img id="im" src="img/image1.png">
+  		<h1><a href="index1.html"> DREAMER </a></h1>
+  		<p> Украшения ручной работы </p>
+  	</div>
+  	<div id="login">
+      	<span id = "user-name">Здравствуй, Гость !</span>
+    	<form class="form-4" name ="log" id="loginForm">
+        	<p>
+           	<label for="email">Логин или email</label>
+           	<input type="email" id = "emailLogIn" name="email" placeholder="Логин или email" required>
+        	</p>
+        	<p>
+            	<label for="password">Пароль</label>
+            	<input type="password" id = "passwordLogIn" name='password' placeholder="Пароль" required>
+        	</p>
+    	</form>
+
+          <form action="#" name="register" id="register" class="register">
+                  <legend>Зарегистрироваться</legend>
+                  <input id = "name" type="text" placeholder="Name" required>
+                  <input id ="email" type="email" placeholder="email" required>
+                  <input id = "password" type="password" required placeholder="password">
+                  <input id = "repeatPassword" type="repeatPassword" placeholder="repeat password" required>
+
+          </form>
+          <p>
+              <button id="btnLog" type="submit" onclick="logBtn()" name="submit">Войти</button>
+          </p>
+          <p>
+              <button id="Reg" type="submit" onclick="reg()" name="submit">Регистрация</button>
+          </p>
+    </div>
+<!-- reg forma-->
+  </header>
+  <div id="wrapper">
+  	<div id="menu">
+  		<ul>
+  			<li class="current_page_item"><a href="index1.html" title= "на главную">Главная</a></li>
+  			<li><a href="#">Магазин</a></li>
+  			<li><a href="#">FAQ</a></li>
+  			<li><a href="#">Контакты</a></li>
+  		</ul>
+  		<div id="search" >
+  			<form method="get" action="#">
+  				<div>
+  					<input type="text" name="s" id="search-text" placeholder="Что вы хотите купить?" />
+  				</div>
+  			</form>
+  		</div> <!-- конец поисковика-->
+  	</div><!-- конец #menu -->
+  </div>
+<div id="page" class="colorPicker">
+      <div id ="side">   <!--начало сайдбара-->
+         <button class="closed" id="burger">  Ассортимент </button>
+            <div id="sidebar" class="m_sidebar closed">
+                <ul>
+                <li><a href="#">Мужские браслеты</a></li>
+                <li><a href="#">Браслеты</a></li>
+                <li><a href="#">Брошки</a></li>
+                <li><a href="#">Бусы</a></li>
+                <li><a href="#">Венки</a></li>
+                <li><a href="#">Жгуты из бисера</a></li>
+                <li><a href="#">Кулоны, подвески</a></li>
+                <li><a href="#">Серьги</a></li>
+                <li><a href="#">Чокеры</a></li>
+                <li><a href="#">Перстни</a></li>
+              </ul>
+            </div>
+          </div>   <!--конец сайдбара-->
+    <div id="content">  <!--начало контента-->
+    		<div id="post">
+    			<img src="https://cs5.livemaster.ru/storage/25/21/a065a79194acbc556b4a370a1diz--ukrasheniya-braslet-iz-ametista-i-agata-zvezdnoe-nebo.jpg"/>
+    			<h2 class="title">Не много о нас</h2>
+      			<div class="entry">
+      				<p>Браслеты уже стали незаменимыми украшениями в нашей жизни. Сегодня это универсальные украшения, которые носят и женщины, и мужчины.
+      					Различные материалы, из которых изготавливают браслеты, позволяют подобрать такую модель, которая лучше всего подойдет к Вашему образу.
+      				 Кроме материала, обратите внимание и на цветовую гамму украшения:</p>
+      				 <ul>
+      					 <li>черные;</li>
+      					 <li>коричневые;</li>
+      					 <li>серые;</li>
+      					 <li>синие браслеты</li>
+      				 </ul>
+      <p>Также украшения на руку из золота, серебра или платины являются достаточно универсальными и гармонично дополняют большинство стильных образов.
+      	 Сегодня большую популярность приобрели браслеты «Шамбала». Эти украшения, в общем, относятся к так называемому стилю «унисекс».Женские и мужские
+      	 модели браслетов имеют некоторые отличия. Так, большинство мужских браслетов имеют простую, лаконичную форму, пастельные и сдержанные цвета.
+      	 Размеры мужских браслетов существенно отличаются. Очень часто мужчины носят браслет из кожи. Он удобен, стильно и модно выглядит, достаточно универсальный.
+      	 По желанию такие браслеты дополняют металлическими вставками и накладками. </p>
+      <p>Женские браслеты более изысканные. Разнообразные яркие бусины ювелирной кружевной тонкой работы, а также драгоценные камни в женских браслетах.
+      	Среди молодежи большой популярностью пользуются браслеты из ниток - так называемые фенечки. Это плетеные браслеты (handmade) ярких цветов и с различными узорами.
+      	 Часто девушки изготавливают браслеты из бисера своими руками. Это довольно просто, достаточно лишь иметь нужную схему изделия. Такие браслеты ручной работы
+      	 прекрасно дополнят как ежедневный образ, так и праздничный.</p>
+      			</div>
+    			<a href="#" class="more">В магазин</a><a href="#" class="comments">Комментарии</a>
+    		</div>
+      </div>   <!--конец контента-->
+
+  <div id="settings">
+    <button class ="closed2" id="burger2">Скрытые возможности</button>
+    <div id="sett" class="sett closed2">
+    <ul>
+  <li>
+        Выбери свой цвет бэка
+        <input type="color" id="bgColor"/>
+  </li>
+
+  <li>
+        <label for="name" >Введите рамер текста</label>
+          <input name="size" type="text" id="txtChange"/>
+          <input type="submit" onclick="changeTxt()" value="Изменить" />
+  </li>
+
+  <li>
+        Спрячь последний тэг
+        <input type="button" id="close" value="Спрятать"/>
+
+  </li>
+
+  <li>
+        Выбери свой шрифт
+        <select id="font">
+                      <option selected value="">Default</option>
+                      <option>Comic Sans MS</option>
+                      <option>Lucida Console</option>
+                      <option>Verdana</option>
+                      <option>Trebuchet MS</option>
+        </select>
+  </li>
+</ul>
+ </div>
+</div>
+
+        <div style="clear: both;">&nbsp;</div>
+      </ul>
+  </div>
+  <footer>
+    <div id="footer-menu">
+  		<ul>
+  			<li class="current_page_item"><a href="index.html" title= "на главную">Главная</a></li>
+  			<li><a href="#">Магазин</a></li>
+  			<li><a href="#">FAQ</a></li>
+  			<li><a href="#">Контакты</a></li>
+  		</ul>
+  	</div>
+  </footer>
+  <script src="code.js"></script>
+</body>
+</html>
